@@ -109,7 +109,11 @@
 
 <div class="input-chip {classesBase}" class:opacity-50={$$restProps.disabled}>
 	<!-- Select (hidden) -->
-	<select bind:value {name} multiple {...prunedRestProps()} class="hidden" />
+	<select {name} multiple {...prunedRestProps()} class="hidden">
+		{#each value as option}
+			<option selected value={option}/>
+		{/each}
+	</select>
 	<!-- Interface -->
 	<div class="input-chip-interface {classesInterface}">
 		<!-- Input Field -->

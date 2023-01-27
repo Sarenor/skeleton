@@ -86,9 +86,14 @@
 <div class="listbox {classesBase}" data-testid="listbox">
 	<!-- Select (hidden) - swap between single or multiple <select> -->
 	{#if multiple}
-		<select bind:value {name} multiple {...prunedRestProps()} class="hidden" />
+		<!-- Select (hidden) -->
+		<select {name} multiple {...prunedRestProps()} class="hidden">
+			{#each value as option}
+				<option selected value={option}/>
+			{/each}
+		</select>
 	{:else}
-		<select bind:value {name} {...prunedRestProps()} class="hidden" />
+		<input bind:value {name} {...prunedRestProps()} type="hidden" class="hidden" />
 	{/if}
 	<!-- List -->
 	<ul class="listbox-list {classesList}" role="listbox" aria-labelledby={labelledby}>
