@@ -43,79 +43,79 @@
 					<div class="space-y-4">
 						<label class="label">
 							<span>Input (text)</span>
-							<input class="input" type="text" placeholder="input text" />
+							<input  type="text" placeholder="input text" />
 						</label>
 						<label class="label">
 							<span>Input (readonly)</span>
 							<!-- NOTE: we recommend setting the tabindex to -1 as well -->
-							<input class="input" type="text" placeholder="input readonly" readonly tabindex="-1" />
+							<input  type="text" placeholder="input readonly" readonly tabindex="-1" />
 						</label>
 						<label class="label">
 							<span>Input (disabled)</span>
-							<input class="input" type="text" placeholder="input disabled" disabled />
+							<input  type="text" placeholder="input disabled" disabled />
 						</label>
 						<label class="label">
 							<span>Input (email)</span>
-							<input class="input" type="email" placeholder="john@example.com" autocomplete="email" />
+							<input  type="email" placeholder="john@example.com" autocomplete="email" />
 						</label>
 						<label class="label">
 							<span>Input (email, multiple)</span>
-							<input class="input" type="email" multiple placeholder="john@example.com, susy@example.com" />
+							<input  type="email" multiple placeholder="john@example.com, susy@example.com" />
 						</label>
 						<label class="label">
 							<span>Input (password)</span>
-							<input class="input" type="password" placeholder="password" />
+							<input  type="password" placeholder="password" />
 						</label>
 						<label class="label">
 							<span>Input (search)</span>
-							<input class="input" type="search" placeholder="Search..." />
+							<input  type="search" placeholder="Search..." />
 						</label>
 						<label class="label">
 							<span>Input (date)</span>
-							<input class="input" type="date" />
+							<input  type="date" />
 						</label>
 						<label class="label">
 							<span>Input (datetime-local)</span>
-							<input class="input" type="datetime-local" />
+							<input  type="datetime-local" />
 						</label>
 						<label class="label">
 							<span>Input (month)</span>
-							<input class="input" type="month" />
+							<input  type="month" />
 						</label>
 						<label class="label">
 							<span>Input (number)</span>
-							<input class="input" type="number" />
+							<input  type="number" />
 						</label>
 						<label class="label">
 							<span>Input (time)</span>
-							<input class="input" type="time" />
+							<input  type="time" />
 						</label>
 						<label class="label">
 							<span>Input (week)</span>
-							<input class="input" type="week" />
+							<input  type="week" />
 						</label>
 						<label class="label">
 							<span>Input (tel)</span>
-							<input class="input" type="tel" multiple placeholder="john@example.com" />
+							<input  type="tel" multiple placeholder="john@example.com" />
 						</label>
 						<label class="label">
 							<span>Input (url)</span>
-							<input class="input" type="url" multiple placeholder="john@example.com" />
+							<input  type="url" multiple placeholder="john@example.com" />
 						</label>
 					</div>
 					<!-- Column 2 -->
 					<div class="space-y-4">
 						<label class="label">
 							<span>Input (file)</span>
-							<input class="input" type="file" />
+							<input  type="file" />
 						</label>
 						<label class="label">
 							<span>Input (file, multiple)</span>
-							<input class="input" type="file" multiple />
+							<input  type="file" multiple />
 						</label>
 						<label class="label">
 							<span>Select</span>
-							<select class="select">
+							<select >
 								<option value="1">Option 1</option>
 								<option value="2">Option 2</option>
 								<option value="3">Option 3</option>
@@ -125,7 +125,7 @@
 						</label>
 						<label class="label">
 							<span>Select (size)</span>
-							<select class="select" size="4" value="1">
+							<select  size="4" value="1">
 								<option value="1">Option 1</option>
 								<option value="2">Option 2</option>
 								<option value="3">Option 3</option>
@@ -135,7 +135,7 @@
 						</label>
 						<label class="label">
 							<span>Select (multiple)</span>
-							<select class="select" multiple value={['1', '2']}>
+							<select  multiple value={['1', '2']}>
 								<option value="1">Option 1</option>
 								<option value="2">Option 2</option>
 								<option value="3">Option 3</option>
@@ -145,22 +145,22 @@
 						</label>
 						<label class="label">
 							<span>Textarea</span>
-							<textarea class="textarea" rows="4" placeholder="Enter some long form content." />
+							<textarea rows="4" placeholder="Enter some long form content." />
 						</label>
 						<fieldset>
 							<div class="label">
 								<strong>Checkboxes</strong>
 								<div class="space-y-2">
 									<label class="flex items-center space-x-2">
-										<input class="checkbox" type="checkbox" checked />
+										<input  type="checkbox" checked />
 										<p>Option 1</p>
 									</label>
 									<label class="flex items-center space-x-2">
-										<input class="checkbox" type="checkbox" />
+										<input  type="checkbox" />
 										<p>Option 2</p>
 									</label>
 									<label class="flex items-center space-x-2">
-										<input class="checkbox" type="checkbox" />
+										<input  type="checkbox" />
 										<p>Option 3</p>
 									</label>
 								</div>
@@ -171,15 +171,15 @@
 								<strong>Radio Buttons</strong>
 								<div class="space-y-2">
 									<label class="flex items-center space-x-2">
-										<input class="radio" type="radio" checked name="radio-direct" value="1" />
+										<input  type="radio" checked name="radio-direct" value="1" />
 										<p>Option 1</p>
 									</label>
 									<label class="flex items-center space-x-2">
-										<input class="radio" type="radio" name="radio-direct" value="2" />
+										<input  type="radio" name="radio-direct" value="2" />
 										<p>Option 2</p>
 									</label>
 									<label class="flex items-center space-x-2">
-										<input class="radio" type="radio" name="radio-direct" value="3" />
+										<input  type="radio" name="radio-direct" value="3" />
 										<p>Option 3</p>
 									</label>
 								</div>
@@ -192,8 +192,8 @@
 						<label class="label">
 							<span>Input (color)</span>
 							<div class="grid grid-cols-[auto_1fr] gap-2">
-								<input class="input" type="color" bind:value={colorValue} />
-								<input class="input" type="text" bind:value={colorValue} readonly tabindex="-1" />
+								<input  type="color" bind:value={colorValue} />
+								<input  type="text" bind:value={colorValue} readonly tabindex="-1" />
 							</div>
 						</label>
 					</div>
@@ -262,11 +262,11 @@ module.exports = {
 			<p>
 				Examples of each type of input are shown below. Note that <code>input</code> styles automatically adjust based on <code>type</code>.
 			</p>
-			<CodeBlock language="html" code={`<input class="input" ...>`} />
+			<CodeBlock language="html" code={`<input  ...>`} />
 			<CodeBlock language="html" code={`<textarea class="textarea" ... />`} />
-			<CodeBlock language="html" code={`<select class="select">...</select>`} />
-			<CodeBlock language="html" code={`<input class="checkbox" ... />`} />
-			<CodeBlock language="html" code={`<input class="radio" ... />`} />
+			<CodeBlock language="html" code={`<select >...</select>`} />
+			<CodeBlock language="html" code={`<input  ... />`} />
+			<CodeBlock language="html" code={`<input  ... />`} />
 		</section>
 		<!-- Input Groups -->
 		<section class="space-y-4">
