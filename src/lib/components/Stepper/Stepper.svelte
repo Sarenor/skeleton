@@ -12,6 +12,8 @@
 	// Props
 	/** Provide classes to style the stepper header gap. */
 	export let gap: CssClasses = 'gap-4';
+	/** The currently active step for binding purposes. */
+	export let currentStep = 0;
 
 	// Props (stepper)
 	/** Provide the verbiage that represents "Step". */
@@ -45,6 +47,8 @@
 	/** Provide arbitrary classes to the stepper content region. */
 	export let regionContent: CssClasses = '';
 
+	//
+
 	// Stores
 	let state: Writable<any> = writable({ current: 0, total: 0 });
 
@@ -75,6 +79,7 @@
 	$: classesHeaderStep = `${cHeaderStep}`;
 	$: classesBadge = (step: number) => (isActive(step) ? active : badge);
 	$: classesContent = `${cContent} ${regionContent}`;
+	$: currentStep = $state.current
 </script>
 
 <div class="stepper {classesBase}" data-testid="stepper">
