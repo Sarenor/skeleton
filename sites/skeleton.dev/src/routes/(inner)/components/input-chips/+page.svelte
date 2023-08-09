@@ -22,7 +22,7 @@
 	};
 
 	// Local
-	let anythingList: string[] = ['foo', 'bar', 'fizz', 'buzz'];
+	let anythingList: string[] = undefined;
 	let flavorsList = ['vanilla', 'chocolate', 'strawberry'];
 	let flavorsWhitelist = ['vanilla', 'chocolate', 'strawberry', 'peach', 'rocky road'];
 	let emails = ['john@email.com', 'jane@email.com', 'sally@email.com'];
@@ -46,7 +46,7 @@
 	<svelte:fragment slot="sandbox">
 		<DocsPreview>
 			<svelte:fragment slot="preview">
-				<InputChip bind:value={anythingList} name="chips-example" placeholder="Enter any value..." class="text-token" />
+				<InputChip bind:value={anythingList} name="chips-example" placeholder="Enter any value..." class="text-token" allowDuplicates />
 			</svelte:fragment>
 			<svelte:fragment slot="footer">
 				<div class="text-center">
